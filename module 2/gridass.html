@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            height: auto;
+            width: 100%;
+            background-color: black;
+            display: flex;
+        }
+
+        .layout{
+            height: auto;
+            width: 80%;
+            /* border: 2px solid red; */
+            display: inline-grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            gap: 10px;
+        }
+
+        .layout > div{
+             height: 220px;
+            /* width: 100%; */
+            /* padding: 35px; */
+            /* background-color: aqua; */
+            font-size: 25px;
+            border: 2px solid;
+            text-align: center;
+        }
+
+        .layout > div img{
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .child1{
+            grid-column:1/span 5 ;
+            grid-row:1;
+        }
+
+         .child2 {
+        grid-column: 6/ span 1;
+        grid-row: 1;
+         }
+
+         .child3{
+            grid-column: 1;
+            grid-row: 2;
+         }
+
+         .child4{
+            grid-column: 2/span 4;
+            grid-row: 2;
+         }
+
+         .child5{
+            grid-column: 6;
+            grid-row: 2;
+         }
+
+         .child6{
+            grid-column: 1/ span 3;
+            grid-row: 3;
+         }
+
+         .child7{
+            grid-column: 4/ span 3;
+            grid-row: 3;
+         }
+
+         .child8{
+            grid-column: 1/ span 2 ;
+            grid-row: 4;
+         }
+
+         .child9{
+            grid-column: 3/ span 2;
+            grid-row: 4;
+         }
+
+         .child10{
+            grid-column: 5/ span 2;
+            grid-row: 4;
+         }
+         
+
+        .main .menu{
+            height: 100vh;
+            width: 20%;
+            /* border: 2px solid blue; */
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .main .menu .div1{
+            color: white;
+            text-align: end;
+            padding: 25px 20px 20px 0;
+            font-size: 25px;
+            justify-content: end;
+        }
+
+        .main .menu .div2{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .main .menu .div2 h3{
+            color: white;
+            text-align: end;
+            padding:0 20px 0 0 ;
+        }
+
+        .main .menu .div3{
+            color: white;
+            display: flex;
+            gap: 30px;
+            justify-content: end;
+            padding: 35px 20px 0 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="layout">
+            <div class="child1"><img  src="https://madtrek.com/wp-content/uploads/2024/08/Benefits-of-treking-img.webp" alt=""></div>
+            <div class="child2"><img src="https://govindaresorts.com/wp-content/uploads/sept-blog4-cover-1024x512.jpg" alt=""></div>
+            <div class="child3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbfP3R619g7pR0Ewcd8EScKudFLYAoU3OtcQ&s" alt=""></div>
+            <div class="child4"><img src="https://news.virginia.edu/sites/default/files/article_image/brexit_header.jpg" alt=""></div>
+            <div class="child5"><img src="https://www.timeoutdubai.com/cloud/timeoutdubai/2022/02/22/United-Kingdom-3.jpg" alt=""></div>
+            <div class="child6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR9oO7ir0_SiLepnLn4tPZ0SZf2YNhY0B6dA&s" alt=""></div>
+            <div class="child7"><img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/216000/216226-British-Columbia.jpg" alt=""></div>
+            <div class="child8"><img src="https://cdn-ikpfijl.nitrocdn.com/ZbATQVKBQixNNYdDpmcfLLeNEzKyraQd/assets/images/optimized/wp-content/uploads/2024/02/4d2cc7d894cd84fe33e950878f6180d4.canada.jpg" alt=""></div>
+            <div class="child9"><img src="https://images.adsttc.com/media/images/552f/f9e3/e58e/ce72/8f00/0001/large_jpg/Bilbao_-_Edificio_Artklass_1.jpg?1429207521" alt=""></div>
+            <div class="child10"><img src="https://www.bmwgroup-classic.com/en/_jcr_content/main/multidownload/stack_highlightteaser_7916_737729291/highlightteaser_7916_737729291.coreimg.jpeg/1722340042615/bmwgroupclassic-w-w-1920x1080px.jpeg" alt=""></div>
+        </div>
+
+        <div class="menu">
+            <div class="div1">SHUTTER</div>
+            <div class="div2">
+               <h3>HOME</h3>
+               <h3>PHOTOS</h3>
+               <h3>BIO</h3>
+               <h3>BLOG</h3>
+               <h3>CONTACT</h3>
+            </div>
+            <div class="div3">
+                <div class="facebook"><i class="fa-brands fa-facebook fa-xl"></i></div>
+                <div class="twiter"><i class="fa-brands fa-twitter fa-xl"></i></div>
+                <div class="instagram"><i class="fa-brands fa-instagram fa-xl"></i></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
