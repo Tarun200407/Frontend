@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #main-div-1 {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            /* flex-direction: column; */
+            background-image: url(https://www.tastingtable.com/img/gallery/the-best-sushi-restaurants-in-dallas/l-intro-1695231811.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            /* background-color: #ffd17e */
+        }
+
+        #main-div-1 .filter {
+            width: 100%;
+            height: 100%;
+            background-color: #ffd17e;
+            position: absolute;
+            top: 0;
+            opacity: 0.10;
+        }
+
+        .navbar {
+            width: auto;
+            height: 70px;
+            background-color: #21243d;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar>.logo {
+            height: 100px;
+            width: 250px;
+            background-image: url(Place\ Your\ Logo\ Here\ \(Double\ Click\ to\ Edit\)\ \(1\).svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            justify-content: start;
+        }
+
+        .navbar>.link {
+            font-size: 25px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+        }
+
+        .navbar>.link a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar>.magnificantglass {
+            background-image: url(Search.svg);
+            width: 20px;
+            height: 20px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-color: #ffffff; */
+        }
+
+        #main-div-1 .main-text-div {
+            height: auto;
+            width: 50%;
+            /* border: 2px solid; */
+            font-size: 125px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+            gap: 60px;
+            padding: 90px ;
+        }
+
+        #main-div-1 .title-text {
+            /* border: 2px solid; */
+            /* padding-top: 80px; */
+            width: 100%;
+            height: auto;
+            /* justify-content: start; */
+            /* border: 2px solid red; */
+            font-size: 100px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        #main-div-1 .text-lorem {
+            width: auto;
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+            /* padding: 60px; */
+        }
+
+        #main-div-1 .round {
+            width: 322px;
+            height: 65px;
+            /* border: 2px solid; */
+            padding-left: 60px;
+            /* padding-bottom: 50px; */
+            display: flex;
+            /* justify-content: start; */
+            align-items: start;
+            /* justify-content: start;   */
+        }
+
+        #main-div-1 .round .btn {
+            width: 310px;
+            height: 55px;
+            border-radius: 33px;
+            background-color: #21243d;
+            font-size: 25px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding-bottom: 30px; */
+        }
+
+        @media only screen and (max-width:950px) {
+            .navbar {
+                width: auto;
+                height: auto;
+                background-color: #21243d;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        /* main-div-1 ends here  */
+
+        /* main-div-2 starts here  */
+
+        #main-div-2 {
+            width: auto;
+            height: auto;
+            background-color: #21243d;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 50px;
+
+        }
+
+        #main-div-2 .text {
+            font-size: 64px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            display: flex;
+            justify-content: start;
+        }
+
+        #main-div-2 .lorem {
+            width: 40%;
+            height: 210px;
+            font-size: 25px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main-div-2 .round {
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #main-div-2 .round .round1 {
+            height: auto;
+            width: 265px;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        #main-div-2 .round .round1 .image1 {
+            background-image: url(https://tse1.mm.bing.net/th?id=OIP.debiENznApmmueDa19vY-gHaHa&pid=Api&P=0&h=180);
+            background-position: center;
+            background-size: cover;
+            height: 160px;
+            width: 160px;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+
+        #main-div-2 .round .round1 .title1 {
+            font-size: 28px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        #main-div-2 .round .round1 .image-lorem-1 {
+            width: 75%;
+            height: 119px;
+            font-size: 17px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        #main-div-2 .round .round2 {
+            height: auto;
+            width: 265px;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        #main-div-2 .round .round2 .image2 {
+            background-image: url(https://tse4.mm.bing.net/th?id=OIP.g1YHcYW0aAnnlPU3rtgW6AHaE8&pid=Api&P=0&h=180);
+            background-position: center;
+            background-size: cover;
+            height: 160px;
+            width: 160px;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+
+        #main-div-2 .round .round2 .title2 {
+            font-size: 28px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        #main-div-2 .round .round2 .image-lorem-2 {
+            width: 75%;
+            height: 119px;
+            font-size: 17px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        #main-div-2 .round .round3 {
+            height: auto;
+            width: 265px;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        #main-div-2 .round .round3 .image3 {
+            background-image: url(https://facts.net/wp-content/uploads/2021/05/Makizushi.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 160px;
+            width: 160px;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+
+        #main-div-2 .round .round3 .title3 {
+            font-size: 28px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        #main-div-2 .round .round3 .image-lorem-3 {
+            width: 75%;
+            height: 119px;
+            font-size: 17px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        @media only screen and (max-width:950px) {
+            #main-div-2 .round {
+                width: 100%;
+                /* border: 2px solid red; */
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+
+        /* main-div-2 ends here  */
+
+        /* main-div-3 start here  */
+
+        #main-div-3 {
+            width: auto;
+            height: auto;
+            background-color: #ffd17e;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 80px;
+            /* padding-top:70px ; */
+            /* padding-bottom: 70px; */
+        }
+
+        #main-div-3 .circle {
+            height: auto;
+            width: 50%;
+            /* background-color: #9a9a9a; */
+            display: flex;
+            justify-content: space-around;
+            padding: 60px;
+
+        }
+
+        #main-div-3 .circle .circle-img {
+            background-image: url(https://tse1.mm.bing.net/th?id=OIP.debiENznApmmueDa19vY-gHaHa&pid=Api&P=0&h=180);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            /* border: 2px solid blue; */
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+        }
+
+        #main-div-3 .title {
+            height: auto;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #main-div-3 .title .title-text {
+            font-size: 75px;
+            color: #21243d;
+            font-weight: 700;
+            font-family: "Montserrat";
+            /* display: flex;
+            justify-content: space-around; */
+        }
+
+        #main-div-3 .title .lorem {
+            width: 70%;
+            height: auto;
+            font-size: 30px;
+            color: #21243d;
+            font-weight: 400;
+            font-family: "Montserrat";
+            padding-top: 20px;
+            /* display: flex; */
+            /* justify-content: space-around; */
+        }
+
+        #main-div-3 .button {
+            padding-top: 50px;
+        }
+
+        #main-div-3 .title .button .round {
+            width: 322px;
+            height: 65px;
+            border-radius: 32px;
+            background-color: #21243d;
+            /* padding-top: 30px ; */
+        }
+
+        #main-div-3 .title .button .btn {
+            font-size: 25px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        @media only screen and (max-width: 950px) {
+            #main-div-3 {
+                width: auto;
+                height: auto;
+                background-color: #ffd17e;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            #main-div-3 .circle .circle-img {
+                background-image: url(https://tse1.mm.bing.net/th?id=OIP.debiENznApmmueDa19vY-gHaHa&pid=Api&P=0&h=180);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                /* border: 2px solid blue; */
+                height: 350px;
+                width: 350px;
+                border-radius: 50%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        /* main-div-3 ends here  */
+
+        /* main-div-4 start header */
+
+        #main-div-4 {
+            width: auto;
+            height: auto;
+            background-color: #21243d;
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            /* padding-bottom: 30px; */
+            /* gap: 40px; */
+        }
+
+        #main-div-4 .text {
+            font-size: 62px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+            /* padding-top: 50px;    */
+        }
+
+        #main-div-4 .lorem {
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+        }
+
+        #main-div-4 .lorem-text {
+            width: 40%;
+            height: auto;
+            font-size: 25px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+            text-align: center;
+            display: flex;
+            align-items: center;
+            /* gap: 30px; */
+        }
+
+        #main-div-4 .round {
+            height: 400px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            /* padding-bottom: 30px; */
+            /* gap: 40px; */
+        }
+
+        #main-div-4 .round .round1 {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            /* background-color: #ffffff; */
+            border: 5px solid #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #main-div-4 .round .round1 .text1 {
+            font-size: 75px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        #main-div-4 .round .round1 .text2 {
+            /* width: 537px;
+            height: 210px; */
+            font-size: 42px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        #main-div-4 .round .round2 {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            /* background-color: #ffffff; */
+            border: 5px solid #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #main-div-4 .round .round2 .text1 {
+            font-size: 75px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        #main-div-4 .round .round2 .text2 {
+            /* width: 537px;
+            height: 210px; */
+            font-size: 42px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        #main-div-4 .round .round3 {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            /* background-color: #ffffff; */
+            border: 5px solid #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #main-div-4 .round .round3 .text1 {
+            font-size: 75px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        #main-div-4 .round .round3 .text2 {
+            /* width: 537px;
+            height: 210px; */
+            font-size: 42px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 950px) {
+            #main-div-4 .round {
+                height: auto;
+                width: auto;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+
+        /* main-div-4 end here*/
+
+        /* main-div-5 start here */
+
+        #main-div-5 {
+            width: auto;
+            height: auto;
+            background-color: #ffd17e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px;
+        }
+
+        #main-div-5 .title {
+            width: 60%;
+            font-size: 75px;
+            color: #21243d;
+            font-weight: 700;
+            font-family: "Montserrat";
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        #main-div-5 .title .title-text {
+            font-size: 75px;
+            color: #21243d;
+            font-weight: 700;
+            font-family: "Montserrat";
+            padding-top: 40px;
+            /* display: flex;
+            justify-content: space-around; */
+        }
+
+        #main-div-5 .title .lorem {
+            width: 70%;
+            height: auto;
+            font-size: 30px;
+            color: #21243d;
+            font-weight: 400;
+            font-family: "Montserrat";
+            padding-top: 20px;
+            /* display: flex; */
+            /* justify-content: space-around; */
+        }
+
+        #main-div-5 .button {
+            padding-top: 30px;
+        }
+
+        #main-div-5 .title .button .round {
+            width: 322px;
+            height: 65px;
+            border-radius: 32px;
+            background-color: #21243d;
+            /* padding-top: 30px ; */
+        }
+
+        #main-div-5 .title .button .btn {
+            font-size: 25px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+            /* padding-top: 10px; */
+        }
+
+        #main-div-5 .circle .circle-img {
+            background-image: url(https://images.pexels.com/photos/3147493/pexels-photo-3147493.jpeg?cs=srgb&dl=sushi-rolls-3147493.jpg&fm=jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            /* border: 2px solid blue; */
+            height: 350px;
+            width: 350px;
+            border-radius: 232px;
+            display: flex;
+            gap: 30px;
+        }
+
+        @media only screen and (max-width: 950px) {
+            #main-div-5 {
+                width: auto;
+                height: auto;
+                background-color: #ffd17e;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 80px;
+                flex-direction: column;
+                gap: 50px;
+            }
+
+            #main-div-5 .title {
+                width: auto;
+                font-size: 75px;
+                color: #21243d;
+                font-weight: 700;
+                font-family: "Montserrat";
+                display: flex;
+                flex-direction: column;
+                /* gap: 40px; */
+            }
+
+            /* #main-div-5 .button{
+            width: auto;
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+        } */
+        }
+
+        /* main-div-5 end here  */
+
+        /* main-div-6 start here  */
+
+        #main-div-6 {
+            height: auto;
+            width: auto;
+            background-image: url(div-6\ background\ image.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 50px;
+            opacity: 0.5;
+        }
+
+        #main-div-6 .filter-1{
+            height: 600px   ;
+            width: 600px;
+            background-color: #21243d;
+            position: absolute;
+            top: 0;
+            opacity: 0.10;
+        }
+
+        #main-div-6 .round {
+            height: 260px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main-div-6 .round-1 {
+            background-image: url(handsome-man-with-shiny-skin-posing.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 170px;
+            width: 170px;
+            /* border: 2px solid white; */
+            border-radius: 50%;
+        }
+
+        #main-div-6 .message {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        #main-div-6 .message .text {
+            width: 60%;
+            height: auto;
+            font-size: 42px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        #main-div-6 .name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        #main-div-6 .name .name-text {
+            font-size: 45px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        @media only screen and (max-width:950px) {}
+
+        /* main-div-6 end here  */
+
+        /* main-div-7 start here  */
+
+        #main-div-7 {
+            width: auto;
+            height: auto;
+            background-color: #ffd17e;
+            padding: 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+        }
+
+        #main-div-7 .text {
+            font-size: 75px;
+            color: #21243d;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main-div-7 .lorem {
+            height: auto;
+            width: auto;
+        }
+
+        #main-div-7 .lorem .lorem-txt {
+            width: 50%;
+            height: auto;
+            font-size: 30px;
+            color: #21243d;
+            font-weight: 400;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        #main-div-7 .email-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 80px;
+        }
+
+        #main-div-7 .email-box .email {
+            width: 640px;
+            height: 45px;
+            border: 2px solid white;
+            border-radius: 32px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #main-div-7 .email-box .email .Email {
+            /* border: 2px solid red; */
+            opacity: 1.502;
+            /* font-size: 25px; */
+            /* color: #000000; */
+            font-weight: 400;
+            font-family: "Montserrat";
+            text-align: center;
+            padding-left: 20px;
+        }
+
+        #main-div-7 .email-box .email .Email input{
+            border: none;
+            outline: none;
+        }
+
+        #main-div-7 .button .round {
+            width: 222px;
+            height: 45px;
+            border-radius: 33px;
+            background-color: #21243d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #main-div-7 .button .round .btn {
+            height: auto;
+            font-size: 25px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 950px) {
+            #main-div-7 {
+                width: auto;
+                height: auto;
+                background-color: #ffd17e;
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+
+        /* main-div-7 end here  */
+
+        /* main-div-8 start here  */
+
+        #main-div-8 {
+            width: auto;
+            height: auto;
+            background-color: #111111;
+            padding: 100px 0 80px 0;
+            display: flex;
+        }
+
+        #main-div-8 .child-div1 {
+            height: 500px;
+            width: 40%;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center;
+            align-items: center; */
+            gap: 30px;
+        }
+
+        #main-div-8 .title {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            justify-content: start;
+            padding-top: 30px;
+            padding-left: 80px;
+        }
+
+        #main-div-8 .title .title-text {
+            font-size: 32px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+        }
+
+        #main-div-8 .lorem {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: start;
+            padding-left: 40px;
+        }
+
+        #main-div-8 .lorem .lorem-text {
+            width: 80%;
+            height: 150px;
+            font-size: 24px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+        }
+
+        #main-div-8 .logo {
+            width: auto;
+            display: flex;
+            justify-content: start;
+            gap: 20px;
+            padding-left: 60px;
+        }
+
+        #main-div-8 .logo .logo1 {
+            background-image: url(Instagram.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+        }
+
+        #main-div-8 .logo .logo2 {
+            background-image: url(Facebook.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+        }
+
+        #main-div-8 .logo .logo3 {
+            background-image: url(Twitter.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+        }
+
+        #main-div-8 .logo .logo4 {
+            background-image: url(WhatsApp.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+        }
+
+        #main-div-8 .child-div2 {
+            height: 500px;
+            width: 60%;
+            /* border: 2px solid blue; */
+            display: flex;
+            /* justify-content: space-evenly; */
+            gap: 40px;
+            padding-left: 40px;
+            padding-top: 30px;
+        }
+
+        #main-div-8 .child-div2 .list-dl1 {
+            font-size: 32px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+            width: 25%;
+            /* border: 2px solid green; */
+            /* color: white; */
+        }
+
+        #main-div-8 .child-div2 .list-dl1 .list-dt1 {
+            padding-top: 20px;
+            font-size: 24px;
+            line-height: 42px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+        }
+
+        #main-div-8 .child-div2 .list-dl2 {
+            font-size: 32px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+            width: 20%;
+            /* border: 2px solid green; */
+            /* color: red; */
+        }
+
+        #main-div-8 .child-div2 .list-dl2 .list-dt2 {
+            padding-top: 20px;
+            font-size: 24px;
+            line-height: 42px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+        }
+
+        #main-div-8 .child-div2 .list-dl3 {
+            font-size: 32px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+            width: 20%;
+            /* border: 2px solid green; */
+        }
+
+        #main-div-8 .child-div2 .list-dl3 .list-dt3 {
+            padding-top: 20px;
+            font-size: 24px;
+            line-height: 42px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Montserrat";
+        }
+
+        @media only screen and (max-width: 950px) {
+            #main-div-8 .child-div2 {
+                height: auto;
+                width: 60%;
+                /* border: 2px solid blue; */
+                display: flex;
+                /* justify-content: space-evenly; */
+                gap: 40px;
+                padding-left: 40px;
+                padding-top: 30px;
+                flex-direction: column;
+            }
+
+            #main-div-8 .logo {
+                width: auto;
+                display: flex;
+                justify-content: start;
+                gap: 20px;
+                padding-left: 60px;
+                flex-direction: column;
+            }
+
+        }
+
+        /* main-div-8 end here  */
+    </style>
+</head>
+
+<body>
+    <!-- main-div-1 start here  -->
+    <div id="main-div-1">
+        <div class="filter"></div>
+        <div class="navbar">
+            <div class="logo"></div>
+            <div class="link">
+                <a href="">Home</a>
+                <a href="">Product</a>
+                <a href="">Promo</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="magnificantglass"></div>
+        </div>
+
+        <div class="main-text-div">
+            <div class="title-text">
+                <p>
+                    Title Here
+                </p>
+            </div>
+            <div class="text-lorem">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur mollitia exercitationem sequi
+                    voluptatum est sint consequuntur, eaque magnam veritatis aliquid quos a perspiciatis delectus quod
+                    laborum doloremque rem facere. </p>
+            </div>
+            <div class="round">
+                <button class="btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- main-div-1 end Here -->
+
+    <!-- main-div-2 start here  -->
+
+    <div id="main-div-2">
+        <div class="text">Popular Menu</div>
+        <div class="lorem">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur amet nisi dicta unde.</p>
+        </div>
+        <div class="round">
+            <div class="round1">
+                <div class="image1"></div>
+                <div class="title1">Title Here</div>
+                <div class="image-lorem-1">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="round2">
+                <div class="image2"></div>
+                <div class="title2">Title Here</div>
+                <div class="image-lorem-2">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="round3">
+                <div class="image3"></div>
+                <div class="title3">Title Here</div>
+                <div class="image-lorem-3">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main-div-2 end here  -->
+
+    <!-- main-div-3 start Here -->
+
+    <div id="main-div-3">
+        <div class="circle">
+            <div class="circle-img"></div>
+        </div>
+        <div class="title">
+            <div class="title-text">Title Here</div>
+            <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis itaque ad doloribus optio
+                dignissimos.</div>
+            <div class="button">
+                <div class="round">
+                    <div class="btn">Order Now</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main-div-3 end Here -->
+
+    <!-- main-div-4 start Here -->
+
+    <div id="main-div-4">
+        <div class="text">Statistics</div>
+        <div class="lorem">
+            <div class="lorem-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio eos deleniti hic
+                voluptatem incidunt!</div>
+        </div>
+        <div class="round">
+            <div class="round1">
+                <div class="text1">123</div>
+                <div class="text2">Store</div>
+            </div>
+            <div class="round2">
+                <div class="text1">100</div>
+                <div class="text2">Menu</div>
+            </div>
+            <div class="round3">
+                <div class="text1">200</div>
+                <div class="text2">CHEF</div>
+            </div>
+        </div>
+        <!-- main-div-4 ends Here -->
+
+        <!-- main-div-5 start here  -->
+        <div id="main-div-5">
+            <div class="title">
+                <div class="title-text">Title Here</div>
+                <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis itaque ad doloribus
+                    optio dignissimos.</div>
+                <div class="button">
+                    <div class="round">
+                        <div class="btn">Order Now</div>
+                    </div>
+                </div>
+            </div>
+            <div class="circle">
+                <div class="circle-img"></div>
+            </div>
+        </div>
+        <!-- main-div-5 end here  -->
+
+        <!-- main-div-6 start here  -->
+        <div id="main-div-6">
+            <div class="filter-1"></div>
+            <div class="round">
+                <div class="round-1"></div>
+            </div>
+            <div class="message">
+                <div class="text">if you are a culinary fan,if you like spend time in your kitchen,you likely find
+                    yourself looking for reliable resources through which you can</div>
+            </div>
+            <div class="name">
+                <div class="name-text">Phoebe Frazier</div>
+            </div>
+        </div>
+        <!-- main-div-6 end here  -->
+
+        <!-- main-div-7 start here  -->
+        <div id="main-div-7">
+            <div class="text">Title Here</div>
+            <div class="lorem">
+                <div class="lorem-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis unde
+                    accusantium nesciunt recusandae.</div>
+            </div>
+            <div class="email-box">
+                <div class="email">
+                    <div class="Email"> <input type="email" name="" id="" placeholder="Your Email"></div>
+                    <div class="button">
+                        <div class="round">
+                            <div class="btn">Subscribe</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main-div-7 end here -->
+
+        <!-- main-div-8 start here  -->
+
+        <div id="main-div-8">
+            <div class="child-div1">
+                <div class="title">
+                    <div class="title-text">Title Here</div>
+                </div>
+                <div class="lorem">
+                    <div class="lorem-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id excepturi
+                        perferendis in dolore tempora iure minima harum minus.</div>
+                </div>
+                <div class="logo">
+                    <div class="logo1"></div>
+                    <div class="logo2"></div>
+                    <div class="logo3"></div>
+                    <div class="logo4"></div>
+                </div>
+            </div>
+            <div class="child-div2">
+                <div class="list-dl1">
+                    <dl>About</dl>
+                    <div class="list-dt1">
+                        <dt>History</dt>
+                        <dt>Our Team</dt>
+                        <dt>Brand Guidelines</dt>
+                        <dt>Term & Condition</dt>
+                        <dt>Privacy Policy</dt>
+                    </div>
+                </div>
+                <div class="list-dl2">
+                    <dl>Service</dl>
+                    <div class="list-dt2">
+                        <dt>How to Order</dt>
+                        <dt>Our Product</dt>
+                        <dt>Order Status</dt>
+                        <dt>Promo</dt>
+                        <dt>Payment Method</dt>
+                    </div>
+                </div>
+                <div class="list-dl3">
+                    <dl>Other</dl>
+                    <div class="list-dt3">
+                        <dt>Contact Us</dt>
+                        <dt>Help</dt>
+                        <dt>Privacy</dt>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
